@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+
+<ul style="list-style-type: none; font-size: 50px; font-weight: bold;">
+    <% if(locals.content && locals.cityName && locals.coordinates) { %>
+        <li>
+            <%= cityName %>
+        </li>
+        <li>
+            <%= content %>
+        </li>    
+        <li>
+            <%= coordinates %>
+        </li>  
+        
+    <% } %>
+</ul>
+<form action="/about">
+    <input type="submit" value="Ok">
+</form>
+<%- include("partials/footer.ejs") %>

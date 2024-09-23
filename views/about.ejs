@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+
+<form action="" method="POST">
+    <label for="about">About me</label>
+    <input type="text" name ="input" required>
+    <input type="submit" value="Submit">
+    
+    <% if(locals.content) {%>
+        <%= content %>
+    <% } %>
+</form>
+
+<%- include("partials/footer.ejs") %>
